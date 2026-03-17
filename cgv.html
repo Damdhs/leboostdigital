@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions Générales de Vente — Le Boost Digital</title>
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06061a;--card:#0f0f2e;--card2:#111130;--indigo:#6366f1;--indigo-l:#818cf8;--cyan:#06b6d4;--purple:#a855f7;--orange:#fb923c;--white:#fff;--grey:#94a3b8;--grey2:#64748b;--accent:#a855f7;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;min-height:100vh;}
+.grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(6,6,26,.9);border-bottom:1px solid rgba(99,102,241,.1);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--indigo),var(--cyan));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.nav-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;background:linear-gradient(90deg,var(--indigo-l),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-back{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--grey);text-decoration:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:30px;padding:8px 18px;transition:color .2s,border-color .2s;}
+.nav-back:hover{color:var(--white);border-color:var(--indigo);}
+/* HERO */
+.page-hero{position:relative;z-index:1;padding:120px 60px 60px;max-width:900px;margin:0 auto;}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.3);border-radius:30px;padding:7px 18px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#a5b4fc;margin-bottom:24px;}
+.page-title{font-family:'Syne',sans-serif;font-size:48px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px;}
+.page-title span{background:linear-gradient(90deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:15px;color:var(--grey);font-weight:300;line-height:1.7;margin-bottom:8px;}
+.page-date{font-size:12px;color:var(--grey2);margin-top:12px;}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;}
+/* CONTENT */
+.page-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 60px 80px;}
+.legal-card{background:var(--card2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:48px;margin-bottom:24px;}
+.legal-card:hover{border-color:rgba(99,102,241,.2);}
+.section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--cyan));border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:800;color:white;margin-right:12px;flex-shrink:0;}
+.section-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--white);display:flex;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.07);}
+.section-body{font-size:14px;color:var(--grey);line-height:1.8;font-weight:300;}
+.section-body p{margin-bottom:14px;}
+.section-body p:last-child{margin-bottom:0;}
+.section-body strong{color:rgba(255,255,255,.85);font-weight:500;}
+.section-body a{color:var(--indigo-l);text-decoration:none;}
+.section-body a:hover{text-decoration:underline;}
+/* TABLE */
+.legal-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
+.legal-table th{background:rgba(99,102,241,.15);color:var(--indigo-l);font-weight:700;padding:10px 14px;text-align:left;font-size:12px;letter-spacing:.05em;text-transform:uppercase;}
+.legal-table td{padding:10px 14px;color:var(--grey);border-bottom:1px solid rgba(255,255,255,.05);}
+.legal-table tr:last-child td{border-bottom:none;}
+.legal-table tr:hover td{background:rgba(255,255,255,.02);}
+/* HIGHLIGHT BOX */
+.highlight-box{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:16px 20px;margin:16px 0;font-size:14px;color:rgba(255,255,255,.75);line-height:1.65;}
+/* LIST */
+.legal-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:12px 0;}
+.legal-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--grey);line-height:1.6;}
+.legal-list li::before{content:'→';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:1px;}
+/* TAG */
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+.ltag{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:5px 14px;border-radius:20px;font-weight:600;}
+/* FOOTER */
+footer{position:relative;z-index:1;border-top:1px solid rgba(99,102,241,.1);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-logo{display:flex;align-items:center;gap:10px;}
+.footer-legal-links{display:flex;gap:20px;}
+.footer-legal-links a{font-size:12px;color:var(--grey2);text-decoration:none;transition:color .2s;}
+.footer-legal-links a:hover{color:var(--white);}
+.footer-copy{font-size:12px;color:var(--grey2);}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .page-hero,.page-content{padding-left:20px;padding-right:20px;}
+  .page-title{font-size:32px;}
+  .legal-card{padding:28px 20px;}
+  footer{padding:24px 20px;flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="hero-orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(99,102,241,.3) 0%,transparent 70%);top:-100px;left:-100px;position:fixed;"></div>
+<div class="hero-orb" style="width:300px;height:300px;background:radial-gradient(circle,rgba(6,182,212,.2) 0%,transparent 70%);bottom:-80px;right:-60px;position:fixed;"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">📋 Documents légaux</div>
+  <h1 class="page-title"><span>Conditions Générales de Vente</span></h1>
+  <p class="page-sub">Applicable à toutes les prestations de services Le Boost Digital</p>
+  <p class="page-date">Dernière mise à jour : 17/03/2026 · Le Boost Digital — Damien DEHAIS</p>
+</div>
+
+<div class="page-content">
+<div class="highlight-box"><strong>TVA non applicable — Article 293B du CGI</strong> (micro-entreprise). Tous les prix sont indiqués en euros TTC.</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">1</span>Prestataire</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Champ</th><th>Information</th></tr></thead><tbody><tr><td>Raison sociale</td><td>Damien DEHAIS — Le Boost Digital</td></tr><tr><td>Statut</td><td>Micro-entreprise</td></tr><tr><td>SIRET</td><td>XXX XXX XXX XXXXX &nbsp;<em style="color:#fb923c;font-size:12px;">← à compléter</em></td></tr><tr><td>Email</td><td><a href="mailto:contact@leboostdigital.fr">contact@leboostdigital.fr</a></td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">2</span>Prestations proposées</div>
+  <div class="section-body"><ul class="legal-list"><li>Création de sites web vitrines et applications web</li><li>Mise en place de workflows d'automatisation digitale</li><li>Gestion et développement des réseaux sociaux</li><li>Marqueurs digitaux (QR code, NFC, vCard)</li><li>Référencement naturel (SEO) et publicité en ligne</li><li>Formation aux outils digitaux et à l'intelligence artificielle</li><li>Maintenance et support technique mensuel</li></ul></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">3</span>Devis et commande</div>
+  <div class="section-body"><p>Toute prestation fait l'objet d'un <strong>devis préalable gratuit</strong>, valable 30 jours. La commande est ferme à réception du devis signé et du versement de l'acompte.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">4</span>Tarifs et paiement</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Condition</th><th>Détail</th></tr></thead><tbody><tr><td>Acompte</td><td>50% à la signature du devis</td></tr><tr><td>Solde</td><td>50% à la livraison des travaux</td></tr><tr><td>Moyens de paiement</td><td>Virement bancaire ou lien de paiement Stripe</td></tr><tr><td>Retard de paiement</td><td>Pénalités de 3% par mois de retard</td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">5</span>Délais de réalisation</div>
+  <div class="section-body"><p>Les délais sont indiqués dans le devis. Ils courent à compter de la réception de l'acompte <strong>ET</strong> de la transmission de tous les éléments nécessaires par le client. Tout retard dû au client décale d'autant le délai de livraison.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">6</span>Obligations du client</div>
+  <div class="section-body"><ul class="legal-list"><li>Fournir les contenus, textes, images et accès nécessaires dans les délais convenus</li><li>Désigner un interlocuteur unique disponible pour les validations</li><li>Valider ou formuler ses retours dans un délai de 7 jours ouvrés</li><li>Régler les factures dans les délais convenus</li></ul></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">7</span>Propriété des livrables</div>
+  <div class="section-body"><p>Les livrables deviennent la pleine propriété du client après <strong>paiement intégral</strong>. Le Boost Digital se réserve le droit de mentionner la réalisation dans son portfolio, sauf accord contraire écrit.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">8</span>Garantie et support</div>
+  <div class="section-body"><p>Chaque livraison inclut une période de support (1 ou 3 mois selon le pack). Les bugs liés à la réalisation sont corrigés gratuitement. Les évolutions font l'objet d'un nouveau devis.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">9</span>Résiliation</div>
+  <div class="section-body"><p>En cas de résiliation après signature et versement de l'acompte, celui-ci reste acquis. Si des travaux ont été engagés, une facturation au prorata sera appliquée.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">10</span>Droit applicable</div>
+  <div class="section-body"><p>Les présentes CGV sont soumises au <strong>droit français</strong>. En cas de litige, une solution amiable sera recherchée. À défaut, le tribunal compétent sera celui du lieu du siège social du prestataire.</p></div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></div>
+  <div class="footer-legal-links">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="cgv.html">CGV</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+  <div class="footer-copy">© 2025 Damien DEHAIS — Le Boost Digital</div>
+</footer>
+</body>
+</html>

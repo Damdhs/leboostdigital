@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions Légales — Le Boost Digital</title>
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06061a;--card:#0f0f2e;--card2:#111130;--indigo:#6366f1;--indigo-l:#818cf8;--cyan:#06b6d4;--purple:#a855f7;--orange:#fb923c;--white:#fff;--grey:#94a3b8;--grey2:#64748b;--accent:#6366f1;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;min-height:100vh;}
+.grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(6,6,26,.9);border-bottom:1px solid rgba(99,102,241,.1);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--indigo),var(--cyan));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.nav-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;background:linear-gradient(90deg,var(--indigo-l),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-back{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--grey);text-decoration:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:30px;padding:8px 18px;transition:color .2s,border-color .2s;}
+.nav-back:hover{color:var(--white);border-color:var(--indigo);}
+/* HERO */
+.page-hero{position:relative;z-index:1;padding:120px 60px 60px;max-width:900px;margin:0 auto;}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.3);border-radius:30px;padding:7px 18px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#a5b4fc;margin-bottom:24px;}
+.page-title{font-family:'Syne',sans-serif;font-size:48px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px;}
+.page-title span{background:linear-gradient(90deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:15px;color:var(--grey);font-weight:300;line-height:1.7;margin-bottom:8px;}
+.page-date{font-size:12px;color:var(--grey2);margin-top:12px;}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;}
+/* CONTENT */
+.page-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 60px 80px;}
+.legal-card{background:var(--card2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:48px;margin-bottom:24px;}
+.legal-card:hover{border-color:rgba(99,102,241,.2);}
+.section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--cyan));border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:800;color:white;margin-right:12px;flex-shrink:0;}
+.section-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--white);display:flex;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.07);}
+.section-body{font-size:14px;color:var(--grey);line-height:1.8;font-weight:300;}
+.section-body p{margin-bottom:14px;}
+.section-body p:last-child{margin-bottom:0;}
+.section-body strong{color:rgba(255,255,255,.85);font-weight:500;}
+.section-body a{color:var(--indigo-l);text-decoration:none;}
+.section-body a:hover{text-decoration:underline;}
+/* TABLE */
+.legal-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
+.legal-table th{background:rgba(99,102,241,.15);color:var(--indigo-l);font-weight:700;padding:10px 14px;text-align:left;font-size:12px;letter-spacing:.05em;text-transform:uppercase;}
+.legal-table td{padding:10px 14px;color:var(--grey);border-bottom:1px solid rgba(255,255,255,.05);}
+.legal-table tr:last-child td{border-bottom:none;}
+.legal-table tr:hover td{background:rgba(255,255,255,.02);}
+/* HIGHLIGHT BOX */
+.highlight-box{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:16px 20px;margin:16px 0;font-size:14px;color:rgba(255,255,255,.75);line-height:1.65;}
+/* LIST */
+.legal-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:12px 0;}
+.legal-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--grey);line-height:1.6;}
+.legal-list li::before{content:'→';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:1px;}
+/* TAG */
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+.ltag{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:5px 14px;border-radius:20px;font-weight:600;}
+/* FOOTER */
+footer{position:relative;z-index:1;border-top:1px solid rgba(99,102,241,.1);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-logo{display:flex;align-items:center;gap:10px;}
+.footer-legal-links{display:flex;gap:20px;}
+.footer-legal-links a{font-size:12px;color:var(--grey2);text-decoration:none;transition:color .2s;}
+.footer-legal-links a:hover{color:var(--white);}
+.footer-copy{font-size:12px;color:var(--grey2);}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .page-hero,.page-content{padding-left:20px;padding-right:20px;}
+  .page-title{font-size:32px;}
+  .legal-card{padding:28px 20px;}
+  footer{padding:24px 20px;flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="hero-orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(99,102,241,.3) 0%,transparent 70%);top:-100px;left:-100px;position:fixed;"></div>
+<div class="hero-orb" style="width:300px;height:300px;background:radial-gradient(circle,rgba(6,182,212,.2) 0%,transparent 70%);bottom:-80px;right:-60px;position:fixed;"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">📋 Documents légaux</div>
+  <h1 class="page-title"><span>Mentions Légales</span></h1>
+  <p class="page-sub">Informations légales obligatoires — Article 6 de la loi n°2004-575</p>
+  <p class="page-date">Dernière mise à jour : 17/03/2026 · Le Boost Digital — Damien DEHAIS</p>
+</div>
+
+<div class="page-content">
+<div class="legal-card">
+  <div class="section-title"><span class="section-num">1</span>Éditeur du site</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Champ</th><th>Information</th></tr></thead><tbody><tr><td>Raison sociale</td><td>Damien DEHAIS — Le Boost Digital</td></tr><tr><td>Statut juridique</td><td>Micro-entreprise</td></tr><tr><td>SIRET</td><td>XXX XXX XXX XXXXX &nbsp;<em style="color:#fb923c;font-size:12px;">← à compléter</em></td></tr><tr><td>Adresse</td><td>Normandie, France &nbsp;<em style="color:#fb923c;font-size:12px;">← à compléter</em></td></tr><tr><td>Email</td><td><a href="mailto:contact@leboostdigital.fr">contact@leboostdigital.fr</a></td></tr><tr><td>Téléphone</td><td>+33 X XX XX XX XX &nbsp;<em style="color:#fb923c;font-size:12px;">← à compléter</em></td></tr><tr><td>Directeur de publication</td><td>Damien DEHAIS</td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">2</span>Hébergement</div>
+  <div class="section-body"><p>Ce site est hébergé par <strong>GitHub Pages</strong>, service de GitHub, Inc.</p><table class="legal-table"><thead><tr><th>Champ</th><th>Information</th></tr></thead><tbody><tr><td>Société</td><td>GitHub, Inc.</td></tr><tr><td>Adresse</td><td>88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</td></tr><tr><td>Site</td><td><a href="https://pages.github.com" target="_blank">pages.github.com</a></td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">3</span>Propriété intellectuelle</div>
+  <div class="section-body"><p>L'ensemble des contenus présents sur ce site (textes, images, logos, graphismes, icônes, structure) sont la propriété exclusive de <strong>Damien DEHAIS — Le Boost Digital</strong>, sauf mention contraire explicite.</p><p>Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site est <strong>interdite sans autorisation écrite préalable</strong>.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">4</span>Limitation de responsabilité</div>
+  <div class="section-body"><p>Le Boost Digital s'efforce de maintenir les informations publiées à jour et exactes. Toutefois, il ne peut être tenu responsable des erreurs, omissions ou résultats obtenus par mauvaise utilisation de ces informations.</p><p>Le Boost Digital ne saurait être tenu responsable des dommages directs ou indirects causés lors de l'accès au site ou à des sites tiers référencés.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">5</span>Liens hypertextes</div>
+  <div class="section-body"><p>Le site peut contenir des liens vers d'autres sites internet. Le Boost Digital n'est pas responsable du contenu de ces sites tiers et ne peut être tenu responsable des dommages résultant de leur consultation.</p></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">6</span>Droit applicable</div>
+  <div class="section-body"><p>Les présentes mentions légales sont soumises au <strong>droit français</strong>. En cas de litige, les tribunaux français seront seuls compétents.</p><div class="highlight-box">Pour toute question : <a href="mailto:contact@leboostdigital.fr">contact@leboostdigital.fr</a></div></div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></div>
+  <div class="footer-legal-links">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="cgv.html">CGV</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+  <div class="footer-copy">© 2025 Damien DEHAIS — Le Boost Digital</div>
+</footer>
+</body>
+</html>

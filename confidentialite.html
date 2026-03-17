@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de Confidentialité — Le Boost Digital</title>
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06061a;--card:#0f0f2e;--card2:#111130;--indigo:#6366f1;--indigo-l:#818cf8;--cyan:#06b6d4;--purple:#a855f7;--orange:#fb923c;--white:#fff;--grey:#94a3b8;--grey2:#64748b;--accent:#06b6d4;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;min-height:100vh;}
+.grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(99,102,241,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 60px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(6,6,26,.9);border-bottom:1px solid rgba(99,102,241,.1);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--indigo),var(--cyan));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.nav-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;background:linear-gradient(90deg,var(--indigo-l),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-back{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--grey);text-decoration:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:30px;padding:8px 18px;transition:color .2s,border-color .2s;}
+.nav-back:hover{color:var(--white);border-color:var(--indigo);}
+/* HERO */
+.page-hero{position:relative;z-index:1;padding:120px 60px 60px;max-width:900px;margin:0 auto;}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.3);border-radius:30px;padding:7px 18px;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#a5b4fc;margin-bottom:24px;}
+.page-title{font-family:'Syne',sans-serif;font-size:48px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px;}
+.page-title span{background:linear-gradient(90deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:15px;color:var(--grey);font-weight:300;line-height:1.7;margin-bottom:8px;}
+.page-date{font-size:12px;color:var(--grey2);margin-top:12px;}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;}
+/* CONTENT */
+.page-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 60px 80px;}
+.legal-card{background:var(--card2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:48px;margin-bottom:24px;}
+.legal-card:hover{border-color:rgba(99,102,241,.2);}
+.section-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--cyan));border-radius:8px;font-family:'Syne',sans-serif;font-size:12px;font-weight:800;color:white;margin-right:12px;flex-shrink:0;}
+.section-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--white);display:flex;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.07);}
+.section-body{font-size:14px;color:var(--grey);line-height:1.8;font-weight:300;}
+.section-body p{margin-bottom:14px;}
+.section-body p:last-child{margin-bottom:0;}
+.section-body strong{color:rgba(255,255,255,.85);font-weight:500;}
+.section-body a{color:var(--indigo-l);text-decoration:none;}
+.section-body a:hover{text-decoration:underline;}
+/* TABLE */
+.legal-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
+.legal-table th{background:rgba(99,102,241,.15);color:var(--indigo-l);font-weight:700;padding:10px 14px;text-align:left;font-size:12px;letter-spacing:.05em;text-transform:uppercase;}
+.legal-table td{padding:10px 14px;color:var(--grey);border-bottom:1px solid rgba(255,255,255,.05);}
+.legal-table tr:last-child td{border-bottom:none;}
+.legal-table tr:hover td{background:rgba(255,255,255,.02);}
+/* HIGHLIGHT BOX */
+.highlight-box{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:16px 20px;margin:16px 0;font-size:14px;color:rgba(255,255,255,.75);line-height:1.65;}
+/* LIST */
+.legal-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin:12px 0;}
+.legal-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--grey);line-height:1.6;}
+.legal-list li::before{content:'→';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:1px;}
+/* TAG */
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+.ltag{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:5px 14px;border-radius:20px;font-weight:600;}
+/* FOOTER */
+footer{position:relative;z-index:1;border-top:1px solid rgba(99,102,241,.1);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-logo{display:flex;align-items:center;gap:10px;}
+.footer-legal-links{display:flex;gap:20px;}
+.footer-legal-links a{font-size:12px;color:var(--grey2);text-decoration:none;transition:color .2s;}
+.footer-legal-links a:hover{color:var(--white);}
+.footer-copy{font-size:12px;color:var(--grey2);}
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .page-hero,.page-content{padding-left:20px;padding-right:20px;}
+  .page-title{font-size:32px;}
+  .legal-card{padding:28px 20px;}
+  footer{padding:24px 20px;flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="hero-orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(99,102,241,.3) 0%,transparent 70%);top:-100px;left:-100px;position:fixed;"></div>
+<div class="hero-orb" style="width:300px;height:300px;background:radial-gradient(circle,rgba(6,182,212,.2) 0%,transparent 70%);bottom:-80px;right:-60px;position:fixed;"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">📋 Documents légaux</div>
+  <h1 class="page-title"><span>Politique de Confidentialité</span></h1>
+  <p class="page-sub">Vos données sont protégées — Conformément au RGPD (UE 2016/679)</p>
+  <p class="page-date">Dernière mise à jour : 17/03/2026 · Le Boost Digital — Damien DEHAIS</p>
+</div>
+
+<div class="page-content">
+<div class="legal-card">
+  <div class="section-title"><span class="section-num">1</span>Responsable du traitement</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Champ</th><th>Information</th></tr></thead><tbody><tr><td>Identité</td><td>Damien DEHAIS — Le Boost Digital</td></tr><tr><td>Email</td><td><a href="mailto:contact@leboostdigital.fr">contact@leboostdigital.fr</a></td></tr><tr><td>Adresse</td><td>Normandie, France</td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">2</span>Données collectées</div>
+  <div class="section-body"><p>Nous collectons uniquement les données que vous nous transmettez volontairement :</p><ul class="legal-list"><li><strong>Formulaire de contact / diagnostic</strong> : nom, email ou téléphone, message, secteur d'activité</li><li><strong>Newsletter</strong> : adresse email uniquement</li><li><strong>Prise de rendez-vous (Calendly)</strong> : nom, email, fuseau horaire</li><li><strong>Navigation</strong> : adresse IP, type de navigateur (cookies techniques uniquement)</li></ul></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">3</span>Finalités du traitement</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Finalité</th><th>Description</th><th>Base légale</th></tr></thead><tbody><tr><td>Répondre à vos demandes</td><td>Gestion des contacts, devis, diagnostic</td><td>Intérêt légitime</td></tr><tr><td>Newsletter</td><td>Envoi d'informations si consentement</td><td>Consentement</td></tr><tr><td>Rendez-vous</td><td>Confirmation et rappel de RDV</td><td>Exécution du contrat</td></tr><tr><td>Amélioration du site</td><td>Analyse anonyme du trafic</td><td>Intérêt légitime</td></tr><tr><td>Obligations légales</td><td>Conservation comptable</td><td>Obligation légale</td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">4</span>Durée de conservation</div>
+  <div class="section-body"><table class="legal-table"><thead><tr><th>Type de données</th><th>Durée de conservation</th></tr></thead><tbody><tr><td>Données de contact</td><td>3 ans à compter du dernier contact</td></tr><tr><td>Données comptables</td><td>10 ans (obligation légale)</td></tr><tr><td>Newsletter</td><td>Jusqu'à désinscription</td></tr><tr><td>Cookies techniques</td><td>Session ou 13 mois maximum</td></tr></tbody></table></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">5</span>Vos droits (RGPD)</div>
+  <div class="section-body"><p>Conformément au RGPD, vous disposez des droits suivants :</p><ul class="legal-list"><li><strong>Accès</strong> : obtenir une copie de vos données</li><li><strong>Rectification</strong> : corriger des données inexactes</li><li><strong>Effacement</strong> : demander la suppression de vos données</li><li><strong>Portabilité</strong> : recevoir vos données dans un format structuré</li><li><strong>Opposition</strong> : vous opposer au traitement de vos données</li><li><strong>Limitation</strong> : restreindre le traitement dans certains cas</li></ul><div class="highlight-box">Pour exercer vos droits : <a href="mailto:contact@leboostdigital.fr">contact@leboostdigital.fr</a> — Réponse sous 30 jours.<br>Vous pouvez également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.</div></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">6</span>Partage des données</div>
+  <div class="section-body"><p>Vos données ne sont <strong>jamais vendues ni louées</strong> à des tiers. Elles peuvent être partagées uniquement avec :</p><ul class="legal-list"><li>Prestataires techniques (GitHub Pages, Calendly, Brevo) dans le cadre strict de leur mission</li><li>Autorités compétentes si obligation légale</li></ul></div>
+</div><div class="legal-card">
+  <div class="section-title"><span class="section-num">7</span>Sécurité</div>
+  <div class="section-body"><p>Nous mettons en œuvre des mesures appropriées pour protéger vos données : connexion <strong>HTTPS/SSL</strong>, accès restreint, hébergement sécurisé.</p></div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="nav-icon">⚡</div><div class="nav-name">Le Boost Digital</div></div>
+  <div class="footer-legal-links">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="cgv.html">CGV</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+  <div class="footer-copy">© 2025 Damien DEHAIS — Le Boost Digital</div>
+</footer>
+</body>
+</html>
