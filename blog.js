@@ -96,7 +96,7 @@ function renderBlog() {
           '<span class="blog-date">📅 ' + a.date + '</span>' +
           '<span class="blog-read">' + a.lecture + ' de lecture</span>' +
         '</div>' +
-        '<a href="' + a.lien + '" class="blog-link">Lire l'article →</a>' +
+        '<a href="' + a.lien + '" class="blog-link">Lire l&#39;article →</a>' +
         '</div>' +
       '</article>';
   });
