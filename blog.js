@@ -8,7 +8,7 @@
 var BLOG_ARTICLES = [
 
   {
-    id: 1,h
+    id: 1,
     emoji: "Robot",
     categorie: "Automatisation IA",
     couleur: "indigo",
