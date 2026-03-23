@@ -31,7 +31,7 @@ var BLOG_ARTICLES = [
     date: "23 mars 2025",
     lecture: "4 min",
     image: "blog/blog-artisan-og.jpg",
-    lien: "blog/artisans-appels-manques.html",
+    lien: "blog/og-artisans-appels-manques.html",
     publie: true
   },
 
