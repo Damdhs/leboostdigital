@@ -8,7 +8,7 @@
 var BLOG_ARTICLES = [
 
   {
-    id: 1,
+    id: 1,h
     emoji: "Robot",
     categorie: "Automatisation IA",
     couleur: "indigo",
@@ -30,8 +30,8 @@ var BLOG_ARTICLES = [
     extrait: "Vous etes sur chantier, votre telephone sonne, vous ne repondez pas. Ce client ne rappellera pas. Decouvrez comment stopper cette fuite de clients silencieuse.",
     date: "23 mars 2025",
     lecture: "4 min",
-    image: "blog/blog-artisan-og.jpg",
-    lien: "blog/og-artisans-appels-manques.html",
+    image: "blog/blog-artisans-og.jpg",
+    lien: "blog/artisans-appels-manques.html",
     publie: true
   },
 
