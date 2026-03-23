@@ -12,7 +12,9 @@
 <meta property="og:url" content="https://www.leboostdigital.fr/blog/{{SLUG}}.html">
 <meta property="og:title" content="{{TITRE}} — Le Boost Digital">
 <meta property="og:description" content="{{EXTRAIT}}">
-<meta property="og:image" content="https://www.leboostdigital.fr/og-image.jpg">
+    <meta property="og:image" content="https://www.leboostdigital.fr/blog/{{IMAGE_OG}}">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
 <meta property="article:published_time" content="{{DATE_ISO}}">
 <meta property="article:author" content="Damien DEHAIS">
 <!-- Twitter -->
@@ -31,7 +33,7 @@
   "publisher": {"@type": "Organization", "name": "Le Boost Digital", "url": "https://www.leboostdigital.fr"},
   "datePublished": "{{DATE_ISO}}",
   "url": "https://www.leboostdigital.fr/blog/{{SLUG}}.html",
-  "image": "https://www.leboostdigital.fr/og-image.jpg",
+      "image": "https://www.leboostdigital.fr/blog/{{IMAGE_OG}}",
   "mainEntityOfPage": "https://www.leboostdigital.fr/blog/{{SLUG}}.html"
 }
 </script>
@@ -140,6 +142,11 @@ footer{position:relative;z-index:1;border-top:1px solid rgba(99,102,241,.1);padd
   </div>
 
   <div class="art-sep"></div>
+
+          <!-- BANNIERE ARTICLE -->
+          <div style="border-radius:16px;overflow:hidden;margin-bottom:40px;box-shadow:0 20px 60px rgba(0,0,0,.4);">
+                      <img src="{{IMAGE_OG}}" alt="{{TITRE}}" style="width:100%;display:block;border-radius:16px;">
+          </div>
 
   <!-- CONTENU — MODIFIEZ ICI -->
   <div class="art-content">
